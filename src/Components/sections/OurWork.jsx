@@ -5,8 +5,8 @@ import SectionTitle from "../small-uis/SectionTitle";
 const cardData = [
   {
     id: 1,
-    image: "/public/Images/our-works/e-commerce.png",
-    video: "/public/videos/our-works/light-frame.mp4",
+    image: "/Images/our-works/e-commerce.png",
+    video: "/videos/our-works/light-frame.mp4",
     link: "https://project-in-dev-text.vercel.app/",
     button: (
       <a class="lets-connect-btn" href="">
@@ -16,8 +16,8 @@ const cardData = [
   },
   {
     id: 2,
-    image: "/public/Images/our-works/fs-e-commerce.png",
-    video: "/public/videos/our-works/fs-e-commerce.mp4",
+    image: "/Images/our-works/fs-e-commerce.png",
+    video: "/videos/our-works/fs-e-commerce.mp4",
     link: "https://final-solution-mu.vercel.app/",
     button: (
       <a class="lets-connect-btn" href="https://final-solution-mu.vercel.app/">
@@ -27,8 +27,8 @@ const cardData = [
   },
   {
     id: 3,
-    image: "/public/Images/our-works/ziponboarding.png",
-    video: "/public/videos/our-works/ziponboarding.mp4",
+    image: "/Images/our-works/ziponboarding.png",
+    video: "/videos/our-works/ziponboarding.mp4",
     link: "https://ziponboarding.in/",
     button: (
       <a class="lets-connect-btn" href="https://ziponboarding.in/">
