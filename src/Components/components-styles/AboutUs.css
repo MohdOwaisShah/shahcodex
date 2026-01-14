@@ -1,0 +1,47 @@
+.about-us-img-and-texts {
+  display: flex;
+  align-items: self-start;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.about-us-img img {
+  height: 21rem;
+}
+
+.about-us-texts h3 {
+  font-size: 27px;
+  margin-bottom: 0.3rem;
+}
+.about-us-texts p {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.about-us-connect-btn {
+  margin-top: 0.8rem;
+}
+
+@media (max-width: 1024px) {
+  .about-us-img-and-texts {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-us-img img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .about-us-texts h3 {
+    font-size: 17px;
+  }
+
+  .about-us-texts p {
+    font-size: 0.8rem;
+  }
+}

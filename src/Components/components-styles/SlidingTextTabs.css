@@ -1,0 +1,70 @@
+/* TextSlider.css */
+.container {
+  overflow: hidden;
+  width: 100%; /* Full screen width */
+  height: 3.5rem; /* Height around 4rem */
+  position: relative;
+  background-color: var(--primary-color);
+  display: flex;
+  border-bottom: 0.4rem solid var(--light-secondary-blue);
+}
+
+.slider {
+  display: flex;
+  white-space: nowrap;
+  font-size: 1.5rem; /* Adjust font size to fit height */
+  font-weight: bold;
+  align-items: center;
+  gap: 1.5rem;
+  animation: slide 50s linear infinite;
+}
+
+.text-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-texts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1rem;
+}
+
+.slider img {
+  height: 1.6rem;
+}
+
+#design-text {
+  color: var(--light-secondary-blue);
+}
+
+#deliver-text {
+  color: var(--secondary-color);
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      -50%
+    ); /* Move by 50% to loop seamlessly with duplicated content */
+  }
+}
+
+@media (max-width: 375px) {
+  .slider {
+    font-size: 1rem;
+  }
+
+  .slider img {
+    height: 1.4rem;
+  }
+
+  .container {
+    height: 3rem;
+  }
+}

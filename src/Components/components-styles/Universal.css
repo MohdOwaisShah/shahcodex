@@ -1,0 +1,138 @@
+/* main{
+    margin: auto 3rem;
+} */
+
+.logo {
+  height: 2.5rem;
+}
+
+.accent-color {
+  color: var(--accent-color);
+}
+
+.sky-blue-color {
+  color: var(--secondary-color);
+}
+
+.lets-connect-btn {
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.3rem;
+  border: none;
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.lets-connect-btn:hover {
+  background-color: var(--lts-btn-hover-color);
+}
+
+/* SectionTitle.css */
+.section-title {
+  margin: 2rem 0rem;
+  padding: 0;
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--text-color, #1f2833);
+  position: relative;
+  z-index: 3;
+  display: inline-block;
+  letter-spacing: -0.01em;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 1px;
+  width: 95%;
+  height: 9px;
+  top: 1.76rem;
+  padding-right: 1rem;
+  z-index: -1;
+  background-color: var(--line-color, #3b82f6);
+  border-radius: 2px;
+}
+
+/* social-media */
+.social-media {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-media .social-media-icon {
+  font-size: 1.6rem;
+  /* color: var(--secondary-color) !important; */
+}
+
+.social-media a {
+  display: flex;
+}
+
+/* sections */
+.sections {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sections-container {
+  width: 74rem;
+}
+
+@media (max-width: 1200px) {
+  .sections-container {
+    width: 63rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .sections-container {
+    width: 51rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sections-container {
+    width: 84%;
+  }
+}
+
+@media (max-width: 375px) {
+  .section-title {
+    font-size: 1.2rem;
+    margin: 1rem 0rem;
+  }
+
+  .section-title::after {
+    height: 5px;
+    top: 1.1rem;
+    width: 91%;
+  }
+
+  .our-services-card-heading h4 {
+    font-size: 0.99rem;
+  }
+
+  .our-services-card-headings {
+    max-width: 9rem;
+  }
+
+  .our-services-card-heading {
+    padding: 1rem 2rem 0rem 2rem;
+  }
+
+  .our-services-card-description-dark {
+    font-size: 0.8rem;
+  }
+
+  .our-services-card-description {
+    font-size: 0.8rem;
+  }
+  .social-media .social-media-icon {
+    font-size: 1.2rem;
+  }
+}

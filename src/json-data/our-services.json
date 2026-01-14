@@ -1,0 +1,55 @@
+[
+  {
+    "id": 1,
+    "cardHeading1": "Custom Web",
+    "cardHeading2": "Development",
+    "cardImg": "/Images/our-services/coding-icon.jpg",
+    "cardPara": "We transform ideas into high-speed, stunning websites for your growth.",
+    "cardClass": "",
+    "cardImgClas": "coding-icon"
+  },
+  {
+    "id": 2,
+    "cardHeading1": "E-Commerce",
+    "cardHeading2": "Solutions",
+    "cardImg": "/Images/our-services/cart.jpg",
+    "cardPara": "Build your online store with secure payment gateways and intuitive management to boost your sales.",
+    "cardClass": "-dark",
+    "cardImgClas": "other-image"
+  },
+  {
+    "id": 3,
+    "cardHeading1": "Responsive",
+    "cardHeading2": "Design",
+    "cardImg": "/Images/our-services/responsive.jpg",
+    "cardPara": "Your website will look and work flawlessly on every device – desktop, tablet, or mobile.",
+    "cardClass": "",
+    "cardImgClas": "other-image"
+  },
+  {
+    "id": 4,
+    "cardHeading1": "Website",
+    "cardHeading2": "Redesign",
+    "cardImg": "/Images/our-services/redesign.jpg",
+    "cardPara": "Modernize your old website to improve speed and user experience.",
+    "cardClass": "-dark",
+    "cardImgClas": "other-image"
+  },
+  {
+    "id": 5,
+    "cardHeading1": "UI/UX Design",
+    "cardImg": "/Images/our-services/multi-star.jpg",
+    "cardPara": "We create stunning, user-friendly interfaces that captivate your audience and enhance their experience.",
+    "cardClass": "",
+    "cardImgClas": "other-image"
+  },
+  {
+    "id": 6,
+    "cardHeading1": "Website",
+    "cardHeading2": "Maintenance",
+    "cardImg": "/Images/our-services/tool.jpg",
+    "cardPara": "Keep your website secure, fast, and up-to-date with our ongoing maintenance and support plans.",
+    "cardClass": "-dark",
+    "cardImgClas": "other-image"
+  }
+]

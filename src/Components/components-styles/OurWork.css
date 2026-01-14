@@ -1,0 +1,103 @@
+/* OurWork.css — minimal changes to keep your structure but prevent flicker */
+
+/* keep your section rules */
+.our-work-section {
+  padding-bottom: 4rem;
+  background-color: var(--primary-color);
+}
+
+/* layout */
+.our-work-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+/* KEEP original .our-work-card selector but add stable sizing */
+.our-work-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  /* border-radius: 5px; */
+  /* Fix the card height relative to width to avoid reflow when media swaps */
+  /* Uses modern aspect-ratio; safe fallback below */
+  aspect-ratio: 16 / 9;
+  min-height: 160px; /* fallback minimum */
+  flex: 1 1 calc(49% - 1rem); /* preserves your approx two-column layout */
+  max-width: calc(49% - 1rem);
+}
+
+/* fallback for browsers not supporting aspect-ratio:
+   uncomment if needed and remove aspect-ratio above:
+.our-work-card { position: relative; }
+.our-work-card::before { content:""; display:block; padding-top:56.25%; } 
+.media-wrapper { position:absolute; inset:0; } 
+*/
+
+/* make both image and video fill the card and not affect layout */
+.our-work-card img,
+.our-work-card video {
+  position: absolute;
+  inset: 0; /* top:0; right:0; bottom:0; left:0 */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* preserves look without changing layout */
+  display: block;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: opacity 220ms ease, transform 220ms ease;
+}
+
+/* keep DOM swapping logic but smoothly hide/show with opacity (if you ever toggle classes) */
+.our-work-card img.hidden,
+.our-work-card video.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.02);
+  pointer-events: none;
+}
+
+.our-work-card img.visible,
+.our-work-card video.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+/* overlay */
+.message-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem;
+  pointer-events: none; /* change to auto if you want clickable button */
+  z-index: 5;
+}
+
+
+/* Responsive breakpoints (keeps your behavior similar) */
+@media (max-width: 1100px) {
+  .our-work-card {
+    flex: 1 1 calc(49% - 1rem);
+    max-width: calc(49% - 1rem);
+  }
+}
+@media (max-width: 768px) {
+  .our-work-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+}

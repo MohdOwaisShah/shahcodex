@@ -1,0 +1,145 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+}
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  background-color: rgba(255, 255, 255, 0.491);
+  backdrop-filter: blur(0.5rem);
+  padding: 2rem 0rem;
+  border-radius: 2rem;
+  transition: all 0.2s ease;
+}
+
+nav .navigation-container {
+  margin-top: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  gap: 16rem;
+  padding: 0rem 1.7rem;
+  transition: all 0.2s ease;
+}
+
+.nav-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.nav-text a {
+  text-decoration: none;
+  color: #1b262c;
+  font-weight: 420;
+  font-size: 1rem;
+}
+
+nav button {
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.3rem;
+  border: none;
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+}
+
+/* hemburger-icon */
+.hemburger-icon {
+  display: none;
+}
+
+/* mobile-navigation */
+.mobile-navigation {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  nav .navigation-container {
+    gap: 9rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  nav .navigation-container {
+    gap: 7rem;
+  }
+
+  .nav-text {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hide-desk-nav {
+    display: none;
+  }
+
+  .mobile-navigation {
+    display: inline-block;
+  }
+
+  .hemburger-icon {
+    display: inline-block;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  nav .navigation-container {
+    gap: 23rem;
+  }
+
+  .lets-connect-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 677px) {
+  nav .navigation-container {
+    gap: 18rem;
+  }
+}
+
+@media (max-width: 600px) {
+  nav .navigation-container {
+    gap: 15rem;
+  }
+}
+
+@media (max-width: 525px) {
+  nav .navigation-container {
+    gap: 10rem;
+  }
+}
+
+
+@media (max-width: 475px) {
+  nav .navigation-container {
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 376px) {
+  nav .navigation-container {
+    gap: 2.5rem;
+  }
+}
+
+/* @media (max-width: 376px) {
+  nav .navigation-container {
+    gap: 3rem;
+  }
+} */
