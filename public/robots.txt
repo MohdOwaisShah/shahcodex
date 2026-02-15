@@ -1,0 +1,11 @@
+# robots.txt for shahcodex.in
+# This file tells search engine crawlers which pages they can access
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://shahcodex.in/sitemap.xml
+
+# Crawl-delay (optional, helps prevent server overload)
+Crawl-delay: 1

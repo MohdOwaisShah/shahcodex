@@ -171,7 +171,7 @@ const ContactUs = () => {
                 <img src="/Images/whatsapp-icon.png" alt="whatsapp" />
                 <div className="whatsapp-texts">
                   <p>Whatsapp Number</p>
-                  <a href="tel:+917977417676">+91 79774-17676</a>
+                  <a href="https://wa.me/917977417676">+91 79774-17676</a>
                 </div>
               </div>
             </div>

@@ -6,6 +6,7 @@ import Footer from "./Components/Footer";
 import Lenis from "lenis";
 import MobileNav from "./Components/MobileNav";
 import { Analytics } from "@vercel/analytics/react";
+import SeoSchema from "./Components/small-uis/SeoSchema";
 
 const App = () => {
   const lastScrollY = useRef(0); // Use ref to store previous scroll position
@@ -56,6 +57,7 @@ const App = () => {
   return (
     <>
       <Analytics />
+      <SeoSchema />
       <MobileNav navOpen={navOpen} setNavOpen={setNavOpen} />
       <Navigation prop={isUp} setNavOpen={setNavOpen} />
       <Main />
