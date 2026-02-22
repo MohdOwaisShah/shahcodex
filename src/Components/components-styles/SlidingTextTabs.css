@@ -36,11 +36,11 @@
   height: 1.6rem;
 }
 
-#design-text {
+.design-text {
   color: var(--light-secondary-blue);
 }
 
-#deliver-text {
+.deliver-text {
   color: var(--secondary-color);
 }
 

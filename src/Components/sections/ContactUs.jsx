@@ -101,7 +101,7 @@ const ContactUs = () => {
 
     try {
       const scriptUrl =
-        "https://script.google.com/macros/s/AKfycby4kWeTJvEiQFoJdmFgfDi8aWSGMRxdb9TwI0h-HEdSLniqJWdwr5EovGRu-aOTPnKp/exec";
+        "https://script.google.com/macros/s/AKfycbzLI3f8XZlLYUNwFH8pchDEmWIYodfKYnOif847650iGkRFrjK429SGzKdH9BVTQ824dA/exec";
 
       // Format the data as URL parameters
       const formParams = new URLSearchParams();
@@ -282,12 +282,12 @@ const ContactUs = () => {
               </button>
               {submitStatus === "success" && (
                 <div className="submit-success">
-                  <span>✓</span> Message sent successfully!
+                  ✓ Message sent successfully!
                 </div>
               )}
               {submitStatus === "error" && (
                 <div className="submit-error">
-                  <span>⚠</span> Failed to send message. Please try again.
+                  ⚠ Failed to send message. Please try again.
                 </div>
               )}
             </form>

@@ -52,8 +52,8 @@ const LogoSlider = () => {
         }}
         className="logo-swiper"
       >
-        {logos.map((logo) => (
-          <SwiperSlide key={logo.id}>
+        {logos.map((logo, i) => (
+          <SwiperSlide key={i}>
             <div className="logo-item">
               <div className="logo-image-wrapper">
                 <img

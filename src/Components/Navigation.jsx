@@ -11,7 +11,7 @@ const Navigation = ({ prop, setNavOpen }) => {
     typeof window !== "undefined" ? window.innerWidth <= 768 : false
   );
 
-  console.log("fixed", prop);
+  // console.log("fixed", prop);
 
   useEffect(() => {
     // guard in case of SSR
@@ -31,7 +31,7 @@ const Navigation = ({ prop, setNavOpen }) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []); // run once on client mount
 
-  console.log("isMenuNav", isMenuNav);
+  // console.log("isMenuNav", isMenuNav);
 
   return (
     <nav id="home">

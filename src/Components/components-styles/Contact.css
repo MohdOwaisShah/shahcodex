@@ -145,6 +145,10 @@
   background-color: var(--lts-btn-hover-color);
 }
 
+.submit-success {
+  color: green;
+}
+
 @media (max-width: 1200px) {
   .contact-us-info-and-form-container {
     flex-direction: column;
@@ -218,7 +222,7 @@
 
 /* Phone Input Customization to match existing inputs */
 .contact-us-form-container .react-tel-input .form-control {
-  width: 100%;
+  width: 100% !important;
   font-size: 0.8rem;
   padding: 0.5rem 0.5rem 0.5rem 48px; /* Left padding for flag */
   border-radius: 7px;
@@ -232,11 +236,13 @@
   border: none;
   background-color: transparent;
   border-radius: 7px 0 0 7px;
+  pointer-events: none; /* Let clicks pass through to input */
 }
 
 .contact-us-form-container .react-tel-input .selected-flag {
   background-color: transparent;
   border-radius: 7px 0 0 7px;
+  pointer-events: auto; /* Re-enable clicks for the flag button */
 }
 
 .contact-us-form-container .react-tel-input .selected-flag:hover,
