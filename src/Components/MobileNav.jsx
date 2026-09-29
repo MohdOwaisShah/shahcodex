@@ -22,6 +22,9 @@ const MobileNav = ({ navOpen, setNavOpen }) => {
             <a href="#about-us" onClick={() => setNavOpen(false)}>
               About Us
             </a>
+            <a href="#pricing" onClick={() => setNavOpen(false)}>
+              Pricing
+            </a>
             <a href="#contact-us" onClick={() => setNavOpen(false)}>
               Contact Us
             </a>

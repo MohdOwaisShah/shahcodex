@@ -1,0 +1,185 @@
+{
+  "sectionHeader": {
+    "title": "Pricing Plans",
+    "tagline": "Simple Plans. Complete Solutions.",
+    "subtitle": "Modern websites, easy ordering, and full support — designed for Indian businesses."
+  },
+  "billingOptions": [
+    { "id": "monthly", "label": "Monthly / Managed Plans", "badge": "Most Flexible" },
+    { "id": "onetime", "label": "One-Time Payment", "badge": "Best Value" }
+  ],
+  "plans": [
+    {
+      "id": "starter-catalogue",
+      "name": "WhatsApp Catalogue",
+      "shortTitle": "Starter Plan",
+      "badge": "BEST FOR SMALL SHOPS",
+      "badgeClass": "badge-blue",
+      "tagline": "Show your products online & get orders directly on WhatsApp.",
+      "isFeatured": false,
+      "pricing": {
+        "monthly": {
+          "price": "₹349",
+          "period": "/month",
+          "setupFee": "₹1,499 Setup",
+          "offerTag": "First Month FREE",
+          "setupDetails": "Includes website, logo & Instagram setup + free subdomain hosting (or free setup for your custom .in/.com domain)"
+        },
+        "onetime": {
+          "price": "₹9,999",
+          "period": "One-Time Payment",
+          "setupFee": "₹0 Setup Fee",
+          "offerTag": "Complete Ownership",
+          "setupDetails": "Includes free subdomain hosting + free custom domain (.in / .com) connection"
+        }
+      },
+      "features": [
+        "Responsive website (design for all devices)",
+        "Up to 50 products catalogue",
+        "Cart & easy checkout with WhatsApp ordering",
+        "Pre-filled WhatsApp order messages",
+        "Business location / map & contact details",
+        "Instagram & social media links",
+        "1 basic logo designed for your shop",
+        "Instagram page set up + 1 launch post",
+        "Free Subdomain hosting (e.g., yourname.vercel.app)",
+        "Custom Domain (.in / .com) setup & connection (Free setup, domain bought by client)",
+        "Hosting & deployment included",
+        "Google Search Console & Basic SEO setup",
+        "Basic product upload (from your data/JSON)",
+        "1 free product update request per month",
+        "2 revision rounds (before launch)",
+        "Launch support & guidance"
+      ],
+      "renewalNotice": "Free subdomain hosting included. Custom domain (.in / .com) renewal is paid by client directly to domain registrar.",
+      "whatsappText": "Hi Shahcodex, I am interested in the WhatsApp Catalogue plan. Please share more details."
+    },
+    {
+      "id": "managed-catalogue",
+      "name": "Managed Catalogue",
+      "shortTitle": "Managed Plan",
+      "badge": "BEST FOR HASSLE-FREE MANAGEMENT",
+      "badgeClass": "badge-accent",
+      "tagline": "We handle the technical work, you focus on growing your business.",
+      "isFeatured": true,
+      "pricing": {
+        "monthly": {
+          "price": "₹599",
+          "period": "/month",
+          "setupFee": "₹1,999 One-Time Setup",
+          "offerTag": "Most Popular",
+          "setupDetails": "Complete setup + free custom domain connection & ongoing maintenance"
+        },
+        "onetime": {
+          "price": "₹14,999",
+          "period": "One-Time + 1-Yr Support",
+          "setupFee": "Setup Included",
+          "offerTag": "All-in-One",
+          "setupDetails": "Full website build + hosting + 1 full year of managed updates"
+        }
+      },
+      "features": [
+        "Responsive website (same as WhatsApp Catalogue)",
+        "Up to 50 products catalogue",
+        "Product catalogue, cart & WhatsApp ordering",
+        "Free Subdomain hosting (e.g., yourname.vercel.app)",
+        "Custom Domain (.in / .com) setup & connection (Free setup, domain bought by client)",
+        "Hosting / deployment included",
+        "Basic SEO setup + Google Search Console",
+        "1 product update request per month (up to 10 product changes)",
+        "Minor text, banners & image changes",
+        "Bug fixing & regular maintenance",
+        "Website uptime monitoring & tech support",
+        "2 revision rounds (before launch)",
+        "Priority WhatsApp & phone assistance"
+      ],
+      "renewalNotice": "Free subdomain hosting included. Custom domain (.in / .com) renewal is paid by client directly to domain registrar.",
+      "whatsappText": "Hi Shahcodex, I am interested in the Managed Catalogue plan. Please share more details."
+    },
+    {
+      "id": "shopify-store",
+      "name": "Full Online Store",
+      "platformTag": "Powered by Shopify",
+      "shortTitle": "Shopify Store",
+      "badge": "BEST FOR GROWING BUSINESSES",
+      "badgeClass": "badge-shopify",
+      "tagline": "Complete e-commerce setup with payments, delivery, admin panel and more.",
+      "isFeatured": false,
+      "pricing": {
+        "monthly": {
+          "price": "₹1,999",
+          "period": "/month management",
+          "setupFee": "₹8,999 One-Time Setup",
+          "offerTag": "E-Commerce Suite",
+          "setupDetails": "Shopify subscription paid directly by client (₹1,499/mo annual or ₹1,994/mo monthly)"
+        },
+        "onetime": {
+          "price": "₹8,999",
+          "period": "One-Time Setup Fee",
+          "setupFee": "Monthly Management Optional",
+          "offerTag": "Full E-Commerce",
+          "setupDetails": "Shopify subscription paid directly by client to Shopify"
+        }
+      },
+      "features": [
+        "Shopify store setup & theme configuration",
+        "Homepage, product page, collection pages",
+        "About, Contact, Policies pages",
+        "Up to 50 product uploads with variants",
+        "Payment gateway integration (UPI, Cards, NetBanking)",
+        "Shipping & delivery setup",
+        "WhatsApp chat & order button",
+        "Free Custom Domain setup & connection (client purchases .com / .in domain)",
+        "Basic SEO setup + Google Analytics & Search Console",
+        "Mobile optimization & speed tuning",
+        "Store testing & launch support",
+        "Basic merchant training to manage your store"
+      ],
+      "managementIncludes": [
+        "Product updates (up to 10 per month)",
+        "Store maintenance & bug fixing",
+        "Small content changes (text/images)",
+        "Theme updates & basic troubleshooting",
+        "Monthly support & guidance"
+      ],
+      "notIncluded": [
+        "Payment gateway transaction fees",
+        "Shopify transaction fees (2% on Basic)",
+        "Shipping/delivery courier charges",
+        "Paid Shopify apps or premium themes",
+        "Advertising & marketing budget",
+        "Custom domain (.com / .in) annual renewal"
+      ],
+      "renewalNotice": "Shopify plan & custom domain renewals are billed directly by respective providers.",
+      "whatsappText": "Hi Shahcodex, I am interested in the Full Online Store (Shopify) plan. Please share more details."
+    }
+  ],
+  "addons": [
+    { "title": "Extra 25 Products", "price": "₹799", "desc": "Additional 25 product uploads with images & info" },
+    { "title": "Extra 50 Products", "price": "₹1,499", "desc": "Additional 50 product uploads with details" },
+    { "title": "Logo Design", "price": "₹999", "desc": "1 professional custom logo designed for your shop" },
+    { "title": "Instagram Setup", "price": "₹999", "desc": "Professional business profile setup & optimization" },
+    { "title": "3 Launch Posts", "price": "₹999", "desc": "Custom designed social media launch creatives" },
+    { "title": "Google Business Profile", "price": "₹999", "desc": "Google Maps profile creation & optimization" },
+    { "title": "Speed Upgrade", "price": "₹1,999", "desc": "Advanced performance & speed optimization" },
+    { "title": "Payment Gateway Setup", "price": "₹1,999", "desc": "Razorpay / Cashfree / PhonePe integration" },
+    { "title": "Advanced Delivery Integration", "price": "₹2,999+", "desc": "Shiprocket / Delhivery courier automation" },
+    { "title": "Custom Section / Page", "price": "₹999+", "desc": "Custom designed webpage or interactive section" },
+    { "title": "Custom Feature / API", "price": "Quote", "desc": "Tailor-made integrations and bespoke features" }
+  ],
+  "importantNotes": [
+    "Domain Policy: Free subdomain hosting (e.g. yourname.vercel.app) is provided for 100% free. If you want a custom domain (.in / .com), you purchase it directly from any registrar and we connect it to your website for free.",
+    "You own your domain, Shopify account, and all associated assets.",
+    "We provide developer/collaborator access where needed.",
+    "Included revisions: 2 rounds before official launch.",
+    "Additional changes after launch are charged as per the add-on list.",
+    "We do not guarantee sales. Your success depends on your products, pricing, marketing and customer traffic.",
+    "All prices are in Indian Rupees (₹)."
+  ],
+  "contact": {
+    "whatsappNumber": "917977417676",
+    "displayPhone": "+91 7977417676",
+    "email": "shahcodexdev@gmail.com",
+    "website": "shahcodex.in"
+  }
+}

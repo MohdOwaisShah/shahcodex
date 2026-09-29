@@ -44,7 +44,7 @@ const Navigation = ({ prop, setNavOpen }) => {
           <a href="#contact-us">Contact Us</a>
         </div>
         <div className="lets-connect-btn-container">
-          <ConnectBtn text={"let's connect"} />
+          <ConnectBtn text={"Let's Connect"} />
           <HiOutlineMenuAlt3
             className="hemburger-icon"
             onClick={() => setNavOpen(true)}

@@ -25,7 +25,7 @@ const Hero = () => {
               <a href="#our-work" id="hero-section-btns-our_work">
                 Our Work
               </a>
-              <ConnectBtn text={"let's connect"} />
+              <ConnectBtn text={"Let's Connect"} />
             </div>
           </div>
         </div>

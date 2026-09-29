@@ -30,19 +30,26 @@
 
 .hero-section-btns {
   display: flex;
-  gap: 0.5rem;
-  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 1rem 0rem 0.5rem 0rem;
 }
 
 #hero-section-btns-our_work {
   font-size: 0.9rem;
+  font-weight: 500;
   text-transform: capitalize;
-  padding: 0.3rem 0.8rem;
-  border-radius: 0.3rem;
+  padding: 0.4rem 0.95rem;
+  border-radius: 0.35rem;
   border: 1px solid var(--primary-color);
   background-color: transparent;
   color: var(--primary-color);
   text-decoration: none;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   transition: all 0.2s ease;
 }
 
