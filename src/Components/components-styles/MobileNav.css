@@ -7,7 +7,14 @@
   height: 100%;
   width: 100%;
   display: flex;
+  overflow: hidden;
   pointer-events: none; /* Key fix: allows clicks to pass through when closed */
+}
+
+@media (min-width: 769px) {
+  .mobile-nav-container {
+    display: none !important;
+  }
 }
 
 /* When open, block clicks */

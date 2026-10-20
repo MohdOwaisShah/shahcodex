@@ -1,103 +1,132 @@
-/* OurWork.css — minimal changes to keep your structure but prevent flicker */
+/* ===================================================
+   OUR WORK SECTION STYLES
+   =================================================== */
 
-/* keep your section rules */
 .our-work-section {
-  padding-bottom: 4rem;
-  background-color: var(--primary-color);
+  padding: 3.5rem 0 4.5rem 0;
+  background-color: #ffffff;
+  width: 100%;
+  scroll-margin-top: 5.5rem;
 }
 
-/* layout */
-.our-work-cards {
+.our-work-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  align-items: stretch;
+  flex-direction: column;
+  align-items: flex-start; /* Ensures section-title does not stretch to 100% width */
 }
 
-/* KEEP original .our-work-card selector but add stable sizing */
+/* Perfect fit for SectionTitle and its bottom underline */
+.our-work-section .section-title {
+  width: fit-content;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+/* Grid Layout: 3 columns on desktop */
+.our-work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.25rem 1.6rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+/* Individual Card */
 .our-work-card {
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-
-  /* border-radius: 5px; */
-  /* Fix the card height relative to width to avoid reflow when media swaps */
-  /* Uses modern aspect-ratio; safe fallback below */
-  aspect-ratio: 16 / 9;
-  min-height: 160px; /* fallback minimum */
-  flex: 1 1 calc(49% - 1rem); /* preserves your approx two-column layout */
-  max-width: calc(49% - 1rem);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
 }
 
-/* fallback for browsers not supporting aspect-ratio:
-   uncomment if needed and remove aspect-ratio above:
-.our-work-card { position: relative; }
-.our-work-card::before { content:""; display:block; padding-top:56.25%; } 
-.media-wrapper { position:absolute; inset:0; } 
-*/
+.our-work-card-link {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  border-radius: 14px;
+  overflow: hidden;
+}
 
-/* make both image and video fill the card and not affect layout */
-.our-work-card img,
-.our-work-card video {
-  position: absolute;
-  inset: 0; /* top:0; right:0; bottom:0; left:0 */
+/* Media Box with aspect ratio and rounded borders (NO BORDER, NO ZOOM) */
+.our-work-media-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 14px;
+  overflow: hidden;
+  background-color: #f1f5f9;
+  border: none;
+  box-shadow: none;
+}
+
+.our-work-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* preserves look without changing layout */
+  object-fit: cover;
   display: block;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  transition: opacity 220ms ease, transform 220ms ease;
 }
 
-/* keep DOM swapping logic but smoothly hide/show with opacity (if you ever toggle classes) */
-.our-work-card img.hidden,
-.our-work-card video.hidden {
-  opacity: 0;
-  visibility: hidden;
-  transform: scale(1.02);
-  pointer-events: none;
-}
-
-.our-work-card img.visible,
-.our-work-card video.visible {
-  opacity: 1;
-  visibility: visible;
-  transform: scale(1);
-}
-
-/* overlay */
-.message-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+/* Card title row underneath the thumbnail */
+.our-work-info-row {
   display: flex;
   align-items: center;
-  justify-content: center;
-  background: rgba(0, 0, 0, 0.6);
-  color: #fff;
-  font-size: 1.2rem;
-  text-align: center;
-  padding: 1rem;
-  pointer-events: none; /* change to auto if you want clickable button */
-  z-index: 5;
+  justify-content: flex-start;
+  padding: 0 0.1rem;
 }
 
+.our-work-project-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #111827;
+  text-decoration: none;
+  letter-spacing: -0.01em;
+  transition: color 0.2s ease;
+}
 
-/* Responsive breakpoints (keeps your behavior similar) */
-@media (max-width: 1100px) {
-  .our-work-card {
-    flex: 1 1 calc(49% - 1rem);
-    max-width: calc(49% - 1rem);
+.our-work-project-title:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ===================================================
+   RESPONSIVE BREAKPOINTS
+   =================================================== */
+
+/* Tablet (2 columns) */
+@media (max-width: 1024px) {
+  .our-work-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem 1.4rem;
   }
 }
-@media (max-width: 768px) {
-  .our-work-card {
-    flex: 1 1 100%;
-    max-width: 100%;
-    aspect-ratio: 16 / 9;
+
+/* Mobile (1 column) */
+@media (max-width: 680px) {
+  .our-work-section {
+    padding: 3rem 0 3.5rem 0;
+  }
+
+  .our-work-section .section-title {
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+
+  .our-work-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .our-work-media-container {
+    aspect-ratio: 4 / 3;
+    border-radius: 12px;
+  }
+
+  .our-work-project-title {
+    font-size: 1rem;
   }
 }
